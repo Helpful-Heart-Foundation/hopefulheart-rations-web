@@ -23,7 +23,7 @@ const AboutSection = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 bg-hope-softPurple rounded-lg p-6 shadow-lg w-64">
+            <div className="absolute -bottom-8 -right-8 bg-hope-softPink rounded-lg p-6 shadow-lg w-64">
               <p className="font-poppins font-medium italic text-hope-dark">
                 "Every ration kit represents hope and dignity for a family in need."
               </p>

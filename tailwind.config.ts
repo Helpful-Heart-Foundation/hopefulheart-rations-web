@@ -63,13 +63,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				hope: {
-					primary: '#9b87f5',
-					secondary: '#7E69AB',
+					primary: '#1EAEDB',
+					secondary: '#0EA5E9',
 					neutral: '#8E9196',
 					dark: '#1A1F2C',
-					softPurple: '#E5DEFF',
-					softPink: '#FFDEE2',
-					softGray: '#F1F0FB'
+					softPurple: '#D3E4FD',
+					softPink: '#F2FCE2',
+					softGray: '#EBF7FF'
 				}
 			},
 			borderRadius: {
@@ -157,8 +157,8 @@ export default {
 				inter: ['Inter', 'sans-serif']
 			},
 			backgroundImage: {
-				'hero-pattern': 'linear-gradient(135deg, #E5DEFF 0%, #FFDEE2 100%)',
-				'card-gradient': 'linear-gradient(135deg, #ffffff 0%, #F1F0FB 100%)'
+				'hero-pattern': 'linear-gradient(135deg, #F2FCE2 0%, #D3E4FD 100%)',
+				'card-gradient': 'linear-gradient(135deg, #ffffff 0%, #EBF7FF 100%)'
 			}
 		}
 	},
