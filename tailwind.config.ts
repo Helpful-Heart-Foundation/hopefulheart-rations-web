@@ -61,6 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				hope: {
+					primary: '#9b87f5',
+					secondary: '#7E69AB',
+					neutral: '#8E9196',
+					dark: '#1A1F2C',
+					softPurple: '#E5DEFF',
+					softPink: '#FFDEE2',
+					softGray: '#F1F0FB'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,72 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(20px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)"
+					}
+				},
+				'fade-in-left': {
+					"0%": {
+						opacity: "0",
+						transform: "translateX(-20px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateX(0)"
+					}
+				},
+				'fade-in-right': {
+					"0%": {
+						opacity: "0",
+						transform: "translateX(20px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateX(0)"
+					}
+				},
+				'scale-in': {
+					"0%": {
+						opacity: "0",
+						transform: "scale(0.95)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "scale(1)"
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)',
+					},
+					'50%': {
+						transform: 'translateY(-10px)',
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.7s ease-out',
+				'fade-in-left': 'fade-in-left 0.7s ease-out',
+				'fade-in-right': 'fade-in-right 0.7s ease-out',
+				'scale-in': 'scale-in 0.7s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+			},
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+				inter: ['Inter', 'sans-serif']
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(135deg, #E5DEFF 0%, #FFDEE2 100%)',
+				'card-gradient': 'linear-gradient(135deg, #ffffff 0%, #F1F0FB 100%)'
 			}
 		}
 	},
