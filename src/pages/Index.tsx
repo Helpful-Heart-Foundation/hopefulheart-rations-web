@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ImpactSection from "@/components/ImpactSection";
-import HowWeHelpSection from "@/components/HowWeHelpSection";
+import CausesSection from "@/components/CausesSection";
 import DonationSection from "@/components/DonationSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -23,23 +23,22 @@ const Index = () => {
     }
   }, [location]);
 
-
   useEffect(() => {
     document.title = "HopefulHeart Foundation | Supporting Widow Communities";
   }, []);
 
   return (
     <>
-    <div className="min-h-screen">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <ImpactSection id="impact" />
-      <HowWeHelpSection id="how-we-help" />
-      <DonationSection id="contact" />
-      <Footer />
-      <ScrollToTop />
-    </div>
+      <div className="min-h-screen">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ImpactSection />
+        <CausesSection />
+        <DonationSection />
+        <Footer />
+        <ScrollToTop />
+      </div>
     </>
   );
 };

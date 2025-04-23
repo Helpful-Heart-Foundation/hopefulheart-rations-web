@@ -1,11 +1,17 @@
+
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Menu, X, Home } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,14 +40,17 @@ const Navbar = () => {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
+            <Link to="/" className="font-medium text-hope-dark hover:text-hope-primary flex items-center gap-1 transition-colors">
+              <Home size={18} className="mb-0.5" /> Home
+            </Link>
             <Link to="/about" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               About
             </Link>
             <Link to="/#impact" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               Impact
             </Link>
-            <Link to="/#how-we-help" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
-              How We Help
+            <Link to="/#causes" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
+              Causes
             </Link>
             <Link to="/contact" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               Contact
@@ -63,6 +72,13 @@ const Navbar = () => {
           <nav className="md:hidden py-5 bg-white absolute left-0 right-0 top-full shadow-md animate-fade-in">
             <div className="flex flex-col space-y-4 px-4">
               <Link
+                to="/"
+                className="font-medium text-hope-dark hover:text-hope-primary flex items-center gap-1 transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Home size={18} className="mb-0.5" /> Home
+              </Link>
+              <Link
                 to="/about"
                 className="font-medium text-hope-dark hover:text-hope-primary transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
@@ -77,11 +93,11 @@ const Navbar = () => {
                 Impact
               </Link>
               <Link
-                to="/#how-we-help"
+                to="/#causes"
                 className="font-medium text-hope-dark hover:text-hope-primary transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                How We Help
+                Causes
               </Link>
               <Link
                 to="/contact"
