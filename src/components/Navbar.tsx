@@ -34,16 +34,16 @@ const Navbar = () => {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/about" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
+            <Link to="/about" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               About
-            </a>
+            </Link>
             <Link to="/#impact" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               Impact
             </Link>
             <Link to="/#how-we-help" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               How We Help
             </Link>
-            <Link to="/#contact" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
+            <Link to="/contact" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               Contact
             </Link>
             <Button className="bg-hope-primary hover:bg-hope-secondary transition-all">
@@ -62,13 +62,13 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <nav className="md:hidden py-5 bg-white absolute left-0 right-0 top-full shadow-md animate-fade-in">
             <div className="flex flex-col space-y-4 px-4">
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="font-medium text-hope-dark hover:text-hope-primary transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
-              </a>
+              </Link>
               <Link
                 to="/#impact"
                 className="font-medium text-hope-dark hover:text-hope-primary transition-colors py-2"
@@ -84,7 +84,7 @@ const Navbar = () => {
                 How We Help
               </Link>
               <Link
-                to="/#contact"
+                to="/contact"
                 className="font-medium text-hope-dark hover:text-hope-primary transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
