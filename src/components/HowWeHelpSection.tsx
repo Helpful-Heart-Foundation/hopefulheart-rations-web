@@ -19,10 +19,10 @@ const HowWeHelpSection = () => {
           <div className="animate-fade-in-left order-2 md:order-1">
             <h3 className="text-2xl font-semibold mb-6 text-hope-dark">Our Ration Kits</h3>
             <p className="mb-6 text-hope-dark/80">
-              Each carefully assembled ration kit contains essential food items and supplies 
+              Each carefully assembled ration kit contains essential food items and supplies
               to support a family for a month. We ensure nutritional balance and quality in every kit.
             </p>
-            
+
             <div className="bg-hope-softGray p-6 rounded-lg mb-6">
               <h4 className="font-semibold mb-4 text-hope-dark">Each kit typically includes:</h4>
               <ul className="grid grid-cols-2 gap-3">
@@ -60,16 +60,16 @@ const HowWeHelpSection = () => {
                 </li>
               </ul>
             </div>
-            
+
             <Button className="flex items-center gap-2 bg-hope-primary hover:bg-hope-secondary transition-all">
               Sponsor a Ration Kit <ArrowRight size={16} />
             </Button>
           </div>
-          
+
           <div className="relative animate-fade-in-right order-1 md:order-2">
-            <img 
-              src="https://images.unsplash.com/photo-1593113630400-ea4288922497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-              alt="Ration kit contents" 
+            <img
+              src="https://images.unsplash.com/photo-1593113630400-ea4288922497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Ration kit contents"
               className="rounded-lg shadow-lg w-full h-auto"
             />
             <div className="absolute -bottom-5 -right-5 bg-hope-primary text-white p-4 rounded-lg shadow-lg">
@@ -82,7 +82,7 @@ const HowWeHelpSection = () => {
         {/* Distribution Process */}
         <div className="bg-hope-softGray rounded-lg p-8 md:p-12">
           <h3 className="text-2xl font-semibold mb-8 text-center text-hope-dark">Our Distribution Process</h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Step 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md relative animate-fade-in">
@@ -94,7 +94,7 @@ const HowWeHelpSection = () => {
                 We work with community leaders to identify widow women and families in need of support.
               </p>
             </div>
-            
+
             {/* Step 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md relative animate-fade-in">
               <div className="absolute -top-5 -left-5 w-10 h-10 bg-hope-primary rounded-full flex items-center justify-center text-white font-bold">
@@ -105,7 +105,7 @@ const HowWeHelpSection = () => {
                 Our volunteers carefully prepare custom ration kits based on family size and specific needs.
               </p>
             </div>
-            
+
             {/* Step 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md relative animate-fade-in">
               <div className="absolute -top-5 -left-5 w-10 h-10 bg-hope-primary rounded-full flex items-center justify-center text-white font-bold">

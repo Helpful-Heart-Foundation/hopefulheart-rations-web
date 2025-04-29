@@ -1,8 +1,9 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, Home } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/components/ui/link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,9 +25,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
@@ -41,7 +41,7 @@ const Navbar = () => {
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className="font-medium text-hope-dark hover:text-hope-primary flex items-center gap-1 transition-colors">
-              <Home size={18} className="mb-0.5" /> Home
+              Home
             </Link>
             <Link to="/about" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               About
@@ -55,9 +55,9 @@ const Navbar = () => {
             <Link to="/contact" className="font-medium text-hope-dark hover:text-hope-primary transition-colors">
               Contact
             </Link>
-            <Button className="bg-hope-primary hover:bg-hope-secondary transition-all">
+            <Link to='/#donation' className="bg-hope-primary hover:bg-hope-secondary transition-all">
               Donate Now
-            </Button>
+            </Link>
           </nav>
 
           <button

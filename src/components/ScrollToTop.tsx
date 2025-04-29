@@ -29,11 +29,11 @@ const ScrollToTop = () => {
       behavior: "smooth"
     });
   };
-  
+
   return (
     <>
       {isVisible && (
-        <button 
+        <button
           onClick={scrollToTop}
           className="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full bg-hope-primary text-white shadow-lg flex items-center justify-center hover:bg-hope-secondary transition-colors animate-scale-in"
           aria-label="Scroll to top"

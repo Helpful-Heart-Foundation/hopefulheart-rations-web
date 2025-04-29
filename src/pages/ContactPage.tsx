@@ -1,20 +1,22 @@
 
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 
+
 const NGO_ADDRESS = {
-  name: "HopefulHeart Foundation",
-  street: "123 Hope Street",
-  city: "Compassion City, CC 12345",
-  country: "United States",
-  email: "info@hopefulheart.org",
-  phone: "+1 (555) 123-4567",
+  name: "18-12-418/O/35/12/A, Omer Colony, ",
+  street: "Hafiz Baba Nagar,",
+  city: " Hyderabad, Telangana 500005",
+  country: "India",
+  email: "hopefulheart1993@gmail.com",
+  phone: "+91 90639 06886",
 };
 
 const GOOGLE_MAPS_EMBED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2768.177116079093!2d-73.98502838443261!3d40.748817179328215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af0711d49d%3A0x13ee0c18e9beebeb!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1582648705471!5m2!1sen!2sus";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.818907667748!2d78.48535847577817!3d17.32428450461866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb994b956275a9%3A0x7d02ad640c27d091!2sHopeful%20Heart%20Foundation!5e0!3m2!1sen!2sin!4v1745920439442!5m2!1sen!2sin";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -42,9 +44,9 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gray-50 flex flex-col justify-start">
+      <div className="min-h-screen bg-gray-50 flex flex-col justify-start p-10">
         <div className="container mx-auto px-4 py-10 w-full max-w-5xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-hope-dark mb-3 text-center">
+          <h1 className="text-4xl md:text-4xl font-bold text-hope-dark mb-3 text-center">
             Contact Us
           </h1>
           <p className="text-gray-600 mb-6 text-center max-w-2xl mx-auto">
@@ -54,6 +56,7 @@ export default function ContactPage() {
             <form
               onSubmit={handleSubmit}
               className="bg-white rounded-lg shadow-lg p-6 flex-1 flex flex-col justify-between min-w-0"
+              style={{width:'20rem'}}
             >
               <div>
                 <label className="block text-gray-700 font-medium mb-2" htmlFor="name">
@@ -109,14 +112,14 @@ export default function ContactPage() {
             <div className="flex-1 min-w-0 flex flex-col justify-between">
               <div className="mb-6">
                 <div className="flex items-center text-hope-dark mb-4">
-                  <MapPin className="mr-2" />
-                  <span className="font-semibold">{NGO_ADDRESS.name}</span>
+                  <MapPin className="mr-1" size={26} />
+                  <span className="font-semibold" style={{fontSize:'1.2rem'}}>{NGO_ADDRESS.name}</span>
                 </div>
                 <div className="text-gray-700 flex items-start mb-1">
                   <span className="min-w-[24px] mr-2 flex justify-center">
-                    <MapPin size={20} />
+                    <MapPin size={24} />
                   </span>
-                  <span>
+                  <span style={{fontSize:'1.2rem'}}>
                     {NGO_ADDRESS.street}<br />
                     {NGO_ADDRESS.city}<br />
                     {NGO_ADDRESS.country}
@@ -124,18 +127,22 @@ export default function ContactPage() {
                 </div>
                 <div className="text-gray-700 flex items-center mb-1">
                   <span className="min-w-[24px] mr-2 flex justify-center">
-                    <Mail size={20} />
+                    <Mail size={24} />
                   </span>
-                  <span>{NGO_ADDRESS.email}</span>
+                  <span style={{fontSize:'1.2rem'}} >{NGO_ADDRESS.email}</span>
                 </div>
                 <div className="text-gray-700 flex items-center">
                   <span className="min-w-[24px] mr-2 flex justify-center">
-                    <Phone size={20} />
+                    <Phone size={24} />
                   </span>
-                  <span>{NGO_ADDRESS.phone}</span>
+                  <span style={{fontSize:'1.2rem'}} >{NGO_ADDRESS.phone}</span>
                 </div>
               </div>
-              <div className="w-full h-52 md:h-60 rounded-lg overflow-hidden mt-auto shadow">
+
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-80 rounded-lg overflow-hidden mt-auto shadow">
                 <iframe
                   src={GOOGLE_MAPS_EMBED_URL}
                   title="NGO Location"
@@ -145,10 +152,8 @@ export default function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            </div>
-          </div>
-        </div>
       </div>
+      <Footer/>
     </>
   );
 }

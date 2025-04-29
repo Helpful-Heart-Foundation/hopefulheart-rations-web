@@ -1,8 +1,18 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/about`;
+    navigate(path);
+  }
+
+
   return (
     <section className="pt-28 pb-16 md:pt-40 md:pb-20 bg-hero-pattern relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -13,26 +23,26 @@ const HeroSection = () => {
               Bringing <span className="text-hope-primary">Hope</span> to Widow Communities
             </h1>
             <p className="text-lg md:text-xl mb-8 text-hope-dark/80 max-w-lg">
-              We provide essential ration kits to widow women, ensuring they have the necessary support 
+              We provide essential ration kits to widow women, ensuring they have the necessary support
               to lead dignified lives. Join us in making a difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="text-lg px-8 py-6 bg-hope-primary hover:bg-hope-secondary font-medium transition-all">
                 Donate Now
               </Button>
-              <Button variant="outline" className="text-lg px-8 py-6 border-hope-primary text-hope-primary hover:bg-hope-softPurple font-medium transition-all flex items-center gap-2">
+              <Button onClick={routeChange} variant="outline" className="text-lg px-8 py-6 border-hope-primary text-hope-primary hover:bg-hope-softPurple font-medium transition-all flex items-center gap-2">
                 Learn More
                 <ArrowRight size={18} />
               </Button>
             </div>
           </div>
-          
+
           {/* Right column with image */}
           <div className="relative animate-fade-in-right">
             <div className="bg-white rounded-lg p-3 shadow-xl transform rotate-2 animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=631&q=80" 
-                alt="Volunteers distributing ration kits" 
+              <img
+                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=631&q=80"
+                alt="Volunteers distributing ration kits"
                 className="rounded-lg w-full h-auto"
               />
             </div>
@@ -50,7 +60,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Decorative floating elements */}
       <div className="absolute top-20 right-10 w-20 h-20 rounded-full bg-hope-softPink opacity-60 animate-float"></div>
       <div className="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-hope-primary opacity-30 animate-float"></div>

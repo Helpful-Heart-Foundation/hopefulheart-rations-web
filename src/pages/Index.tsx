@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ImpactSection from "@/components/ImpactSection";
-import CausesSection from "@/components/CausesSection";
+import CausesArea from "@/components/CausesArea.jsx";
 import DonationSection from "@/components/DonationSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -34,7 +34,7 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ImpactSection />
-        <CausesSection />
+        <CausesArea />
         <DonationSection />
         <Footer />
         <ScrollToTop />
