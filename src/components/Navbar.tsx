@@ -31,11 +31,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-hope-primary flex items-center justify-center">
-              <span className="text-white text-xl font-bold">H</span>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center">
+              {/* <span className="text-white text-xl font-bold">H</span> */}
+              <img src="/images/logo.png"/>
             </div>
             <span className={`font-poppins font-bold text-xl text-hope-dark`}>
-              HopefulHeart
+              HopefulHeartFoundation
             </span>
           </Link>
 

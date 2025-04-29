@@ -21,7 +21,7 @@ const Causes = () => {
                                     <img
                                         src="/images/ration_kit.jpeg"
                                         alt="Ration-kit Distribution"
-                                        className="w-full h-64 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                 </div>
                                 <div className="blog-inner-content p-4">
@@ -44,7 +44,7 @@ const Causes = () => {
                                     <img
                                         src="/images/rationKit7.jpeg"
                                         alt="Pension for Single Mothers"
-                                        className="w-full h-64 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                 </div>
                                 <div className="blog-inner-content p-4">
@@ -67,7 +67,7 @@ const Causes = () => {
                                     <img
                                         src="/images/mardasa2.jpg"
                                         alt="Al-Noora Quran Academy"
-                                        className="w-full h-64 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                 </div>
                                 <div className="blog-inner-content p-4">
@@ -90,7 +90,7 @@ const Causes = () => {
                                     <img
                                         src="/images/skill_dev.jpeg"
                                         alt="Skill Development Classes"
-                                        className="w-full h-64 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                 </div>
                                 <div className="blog-inner-content p-4">
@@ -113,7 +113,7 @@ const Causes = () => {
                                     <img
                                         src="/images/snacks.jpeg"
                                         alt="Snacks Distribution"
-                                        className="w-full h-64 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                 </div>
                                 <div className="blog-inner-content p-4">
@@ -136,7 +136,7 @@ const Causes = () => {
                                     <img
                                         src="/images/marriage.jpg"
                                         alt="Marriage Assistance"
-                                        className="w-full h-64 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                 </div>
                                 <div className="blog-inner-content p-4">

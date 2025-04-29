@@ -54,7 +54,6 @@ const DonationSection = () => {
 
             <div className="grid gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
-
                 <div>
                   <h4 className="font-semibold text-lg mb-2 text-hope-dark">Ration Kit</h4>
                   <p className="text-hope-dark/70">
@@ -64,7 +63,6 @@ const DonationSection = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
-
                 <div>
                   <h4 className="font-semibold text-lg mb-2 text-hope-dark">Extended Support</h4>
                   <p className="text-hope-dark/70">
@@ -74,7 +72,6 @@ const DonationSection = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
-
                 <div>
                   <h4 className="font-semibold text-lg mb-2 text-hope-dark">Family Support</h4>
                   <p className="text-hope-dark/70">
@@ -84,7 +81,6 @@ const DonationSection = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
-
                 <div>
                   <h4 className="font-semibold text-lg mb-2 text-hope-dark">Community Impact</h4>
                   <p className="text-hope-dark/70">
@@ -92,8 +88,33 @@ const DonationSection = () => {
                   </p>
                 </div>
               </div>
+
+              <br />
+              {/* Right column: Impact Information */}
+              <div className="animate-fade-in-right">
+                <h3 className="text-2xl font-semibold mb-6 text-hope-dark">Bank Details</h3>
+                <div className="grid gap-6">
+                  <div className="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2 text-hope-dark">HDFC / Current Account</h4>
+                      <p className="text-hope-dark/70">
+                        NAME: Hopeful Heart Foundation
+                        <br/>
+                        ACC NO: 50200094035676
+                        <br/>
+                        IFSC: HDFC0008332
+                        <br/>
+                        BRANCH: Kanchan Bagh, Hyderabad.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </section>
